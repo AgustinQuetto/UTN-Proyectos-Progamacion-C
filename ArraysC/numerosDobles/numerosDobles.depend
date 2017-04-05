@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1491232412 source:d:\arraysc\numerosdobles\main.c
+	<stdio.h>
+	<stdlib.h>
+

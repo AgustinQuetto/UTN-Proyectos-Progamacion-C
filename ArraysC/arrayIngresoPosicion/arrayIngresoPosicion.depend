@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1491225888 source:d:\arraysc\arrayingresoposicion\main.c
+	<stdio.h>
+	<stdlib.h>
+
