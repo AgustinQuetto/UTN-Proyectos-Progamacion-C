@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1490618053 source:d:\quetto\prototipo1\main.c
+	<stdio.h>
+	<stdlib.h>
+
