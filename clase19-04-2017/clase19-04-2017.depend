@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1492615102 source:d:\quetto\clase19-04-2017\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"main.h"
+
+1492615259 d:\quetto\clase19-04-2017\main.h
+
