@@ -20,64 +20,35 @@ int main()
     }*/
 
     do{
-        printf("\n1- Ingresar persona\n");
-        printf("2- Listar personas\n");
-        printf("3- Modificar persona\n");
-        printf("4- Eliminar persona\n");
-        printf("5- Ordenar\n");
-        printf("6- Salir\n");
-        printf("Opcion: ");
-        fflush(stdin);
-        scanf("%d",&opc);
+        printf("\n1- Ingresar persona\n2- Listar personas\n3- Modificar persona\n4- Eliminar persona\n5- Ordenar\n6- Salir\nOpcion: ");
+        scanf("%d", &opc);
 
-        personas unaPersona[5];
+        personas unaPersona[COL];
         switch(opc){
             case 1:
-                printf("\nIngrese el DNI: ");
-                scanf("%d", &unaPersona[0].dni);
-                printf("\nIngrese el nombre: ");
-                fflush(stdin);
-                scanf("%s", &unaPersona[0].nombre);
-                printf("\nIngrese el apellido: ");
-                fflush(stdin);
-                scanf("%s", &unaPersona[0].apellido);
-                printf("\nIngrese el dia: ");
-                scanf("%d", &unaPersona[0].nacimiento.dia);
-                printf("\nIngrese el mes: ");
-                scanf("%d", &unaPersona[0].nacimiento.mes);
-                printf("\nIngrese el anio: ");
-                scanf("%d", &unaPersona[0].nacimiento.anio);
-                printf("\nDesea activar la persona ingresada? 1/0 ");
-                scanf("%d", &unaPersona[0].estado);
+                    agregarPersona(unaPersona[];COL);
                 break;
             case 2:
-                for(int i = 0; i<5;i++){
-                        /*if (unaPersona[i].dni== 1){*/
-                            printf("\n%d | %s, %s | %d/%d/%d", unaPersona[0].dni,unaPersona[0].apellido,unaPersona[0].nombre,unaPersona[0].nacimiento.dia,unaPersona[0].nacimiento.mes,unaPersona[0].nacimiento.anio);
-                        /*}*/
-                }
+                    listarPersona(unaPersona[];COL);
                 break;
             case 3:
-                printf("\nDNI del usuario a eliminar: ");
-                fflush(stdin);
+                printf("\nDNI del usuario a modificar: ");
                 scanf("%d", &aux);
-                    for(int i=0; i < 5;i++){
-                        if(unaPersona[i].dni == aux){
-                            unaPersona[i].dni == 0;
-                        }
-                    }
+
                 break;
             case 4:
+                printf("\nDNI del usuario a eliminar: ");
+                scanf("%d", &aux);
+                    inhabilitarPersona(personas unaPersona[], int arrayExtension, aux)
                 break;
             case 5:
+            //BURBUJERO QUICKSORT
                 break;
             case 6:
                 continuar = 'n';
                 break;
                 }
-    }while(continuar = 's');
-//            persona.id=1;
-  //          strcpy(persona.name, "Agustin");
-    //        persona.percentage = 86.5;
+    }while(continuar == 's');
+
     return 0;
 }
