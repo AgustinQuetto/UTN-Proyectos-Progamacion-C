@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1493822854 source:d:\nerdflixposta\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"functions.c"
+
+1493823433 d:\nerdflixposta\functions.c
+	"functions.h"
+
+1493821322 d:\nerdflixposta\functions.h
+
